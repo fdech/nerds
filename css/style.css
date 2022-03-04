@@ -4,6 +4,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -114,6 +119,10 @@ body {
     width: 540px;
 }
 
+.services {
+    padding: 80px 0;
+}
+
 .services-list {
     list-style-type: none;
 
@@ -143,4 +152,120 @@ body {
 .services-item p {
     margin: 0;
     margin-bottom: 30px;
+}
+
+.info--wrapper{
+    display: grid;
+    grid-template-columns: 660px 360px;
+    grid-gap: 140px;
+
+    padding: 70px 0;
+
+    border-top: 2px solid #EEEEEE;
+}
+
+.info-text--big {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.info-text {
+    margin-bottom: 40px;
+}
+
+.info-title {
+    font-size: 16px;
+    line-height: 24px;
+
+    text-transform: uppercase;
+    color: #283136;
+}
+
+.orders-list {
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.orders-item {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    padding-left: 35px;
+
+    position: relative;
+}
+
+.orders-item::before {
+    position: absolute;
+    content: '';
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 25px;
+    height: 3px;
+    background: #FB565A;
+}
+
+.info-img {
+    margin-bottom: 35px;
+}
+
+.info-stats {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.info-stats--wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+
+.stats-title {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+}
+
+.stats-title sup {
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.partners-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 100px;
+
+    list-style-type: none;
+
+    border-top: 2px solid #EEEEEE;
+    border-bottom: 2px solid #EEEEEE;
+    padding: 45px 35px;
+    align-items: center;
+}
+
+.partners-item {
+    position: relative;
+}
+
+.partners-item::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 52px;
+    background: #eeeeee;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -48px;
+    filter: opacity(1);
 }
